@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="styles.css" rel="stylesheet" />
 </head>
 <body>
     <h1>Welcome to Abhiraj's Component List</h1>
@@ -28,89 +29,102 @@
 
     <h3>Fluid Container</h3>
 
-    <div>This is the fluid container and will go till the end of the page--(container used is div)</div>
+    <div class="container">This is the fluid container and will go till the end of the page--(container used is div)</div>
 
-    <div class="center">This is a center container and it will go till the specified width</div>
+    <h3>Center Container</h3>
+    <div class="container container-center" >This is a center container and it will go till the specified width</div>
 
     <hr>
 
     <h2>@Links</h2>
 
-    <a href="/" >Primary Link</a> <br>
-    <a href="/" >Secondary Link</a>
+    <a href="/" class="link links-primary">Primary Link</a>
+
+    <a href="/" class="link links-secondary">Secondary Link</a>
 
     <hr>
 
     <h2>@Lists</h2>
     <h3>unorderd List</h3>
-    <ul>
-        <li>Apple</li>
+    <ul class="list-no-bullet">
+        <li> Apple</li>
         <li>Mango</li>
         <li>banana</li>
 
     </ul>
 
     <h3>unordered inline(in the same line) list</h3>
-    <ul>
-        <li>car</li>
-        <li>bike</li>
-        <li>trains</li>
+    <ul class="list-no-bullet">
+        <li class="list-inline">car</li>
+        <li class="list-inline">bike</li>
+        <li class="list-inline">trains</li>
     </ul>
 
-    <h3>ordered list(will reverse this list when we will do css)</h3>
-    <ol>
-        <li>jai mata di</li>
-        <li>bolo</li>
+    <h3>ordered list(only the numbers get reversed and not the items corresponding to it)</h3>
+    <ol reversed>
         <li>jor se</li>
+        <li>bolo</li>
+        <li>jai mata di</li>
     </ol>
 
     <hr>
 
     <h2>@Nav</h2>
+    <nav class="navigation container">
 
-    <div>Where to?</div>
+    <div class="nav-brand">Brand Name</div>
 
-    <ul>
-        <li>
-            <a href="/">Nagpur Map</a>
+    <ul class="list-non-bullet nav-pills">
+        <li class="list-inline">
+            <a class="link active-link" href="/">Home</a>
         </li>
-        <li>
-            <a href="/">Pune Map</a>
+        <li class="list-inline">
+            <a class="link" href="/">Products</a>
         </li>
-        <li>
-            <a href="/">Mumbai Map</a>
+        <li class="list-inline">
+            <a class="link" href="/">About</a>
         </li>
 
     </ul>
 
+</nav>
+
     <hr>
     <h2>@header</h2>
-    <header>
-        <img src="/images/explore.svg" >
-        <h1>You are inside Header!!</h1>
+    <header class=
+    "hero">
+        <img class="hero-img" src="/images/explore.svg" >
+        <h1 class="hero-header">You are inside Header!!</h1>
     </header>
 
     <hr>
 
     <h2>@Section</h2>
-    <section>
-        <h3>Red section</h3>
-        <p>This will have black background</p>
+    <section class="section">
+        <div class="container container-center">
+        <h3>White section</h3>
+        <p>This will have white background</p>
+        </div>
     </section>
 
-    <section>
-        <h3>Blue section</h3>
-        <p>This will have orange background</p>
+    <section class="section ow">
+        <div class="container container-center">
+        <h3>offwhite section</h3>
+        <p>This will have offwhite background</p>
+        </div>
     </section>
 
     <hr>
     <h2>@Footer-(do not use h1 etc inside footer) </h2>
-    <footer>
-        <div>This will have small footer</div>
-        <ul>
-            <li>saffron</li>
-            <li>white</li>
-            <li>green</li>
+    <footer class="footer">
+        <div class="footer-header">This will have small footer</div>
+        <ul class="list-no-bullet">
+            <li class="list-inline">
+                <a class="link" href="/">saffron</a></li>
+            <li class="list-inline">
+                <a class="link" href="/">white</a></li>
+            <li class="list-inline">
+                <a class="link" href="/">green</a></li>
         </ul>
     </footer>
 
@@ -121,8 +135,8 @@
     
 
 
-    <div style="height: 30vh;">
-    </div>
+    <!-- <div style="height: 30vh;"> 
+    </div>-->
 
 </body>
 </html>
