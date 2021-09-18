@@ -55,7 +55,7 @@ border: 1px solid var(--primary-color)
 
 .list-inline {
     display: inline;
-    padding: 0rem 0.5rem
+    padding: 0rem 0.5rem;
 }
 
 /** Nav **/
@@ -72,8 +72,7 @@ border: 1px solid var(--primary-color)
 }
 
 .navigation .nav-pills{
-    text-align: 
-    right;
+    text-align: right;
 }
 
 .navigation .active-link{
